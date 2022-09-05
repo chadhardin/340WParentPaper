@@ -10,7 +10,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import mean_squared_error
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, BatchNormalization, Dropout, Flatten, Conv1D
-from tensorflow.keras.layers import CuDNNLSTM
+from tensorflow.compat.v1.keras.layers import CuDNNLSTM
 from tensorflow.keras.callbacks import ModelCheckpoint, TensorBoard
 import tensorflow as tf
 import pandas as pd
